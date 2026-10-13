@@ -2,206 +2,311 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Narayan Subedi – Administrative Assistant</title>
-<meta name="description" content="Portfolio of Narayan Subedi, Senior Assistant (Administration) at Benighat Rorang Rural Municipality, Dhading, Nepal.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Narayan Subedi | Senior Assistant (Administration), Dhading, Nepal</title>
+<meta name="description" content="Portfolio of Narayan Subedi, Senior Assistant (Administration) at Benighat Rorang Rural Municipality, Dhading, Nepal. Official correspondence, documentation and records management.">
+<meta name="theme-color" content="#14213d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Narayan Subedi | Administrative Professional">
+<meta property="og:description" content="Official correspondence, documentation and records management in local government, Nepal.">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Libre+Franklin:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
 <style>
-:root{
-  --ink:#1b2340;
-  --ink-soft:#4a5372;
-  --snow:#f3f6fb;
-  --card:#ffffff;
-  --line:#d9e0ee;
-  --indigo:#233a7a;
-  --crimson:#b3203a;
-  --serif:"Newsreader",Georgia,"Times New Roman",serif;
-  --sans:"Libre Franklin","Segoe UI",Roboto,Arial,sans-serif;
-}
+:root{--navy:#14213d;--navy2:#1d2f55;--gold:#b8923b;--gold2:#d4b061;--ink:#2b2f3a;--soft:#5b6070;--bg:#faf8f4;--card:#fff;--line:#e6e1d6;
+--serif:"Fraunces",Georgia,serif;--sans:"Inter","Segoe UI",Roboto,Arial,sans-serif;--sh:0 1px 2px rgba(20,33,61,.06),0 12px 32px rgba(20,33,61,.08)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{font-family:var(--sans);color:var(--ink);background:var(--snow);line-height:1.65;font-size:1rem}
-a{color:var(--indigo)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--crimson);outline-offset:3px;border-radius:4px}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.7;font-size:clamp(.96rem,.92rem + .2vw,1.05rem);overflow-x:hidden;-webkit-text-size-adjust:100%}
+a{color:var(--navy)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:.5rem;background:#fff;padding:.5rem 1rem;z-index:100;border-radius:8px}.skip:focus{left:.75rem}
 
-.page{max-width:1120px;margin:0 auto;padding:2rem 1.25rem 3rem;display:grid;grid-template-columns:320px 1fr;gap:2rem;align-items:start}
+/* Header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(250,248,244,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--serif);font-weight:600;font-size:1.25rem;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.logo i{font-style:normal;display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--navy);color:var(--gold2);font-size:.95rem}
+nav ul{display:flex;gap:.25rem;list-style:none}
+nav a{display:block;padding:.45rem .8rem;border-radius:999px;font-size:.9rem;font-weight:500;color:var(--soft);text-decoration:none}
+nav a:hover,nav a.on{color:var(--navy);background:#efeadf}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);background:#fff;border-radius:12px;cursor:pointer;place-items:center}
 
-/* Profile column */
-.profile{position:sticky;top:1.5rem;background:var(--indigo);color:#fff;border-radius:18px;padding:2rem 1.5rem;text-align:center;border-bottom:6px solid var(--crimson)}
-.avatar{width:168px;height:168px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.85);background:#dfe6f5;display:block;margin:0 auto 1.25rem}
-.profile h1{font-family:var(--serif);font-size:2rem;line-height:1.15;font-weight:600}
-.role{margin-top:.35rem;color:#cdd8f5}
-.office{margin-top:.15rem;font-size:.9rem;color:#cdd8f5}
-.contact{list-style:none;margin-top:1.5rem;text-align:left;display:grid;gap:.7rem;font-size:.95rem}
-.contact li{display:flex;gap:.75rem;align-items:flex-start;word-break:break-word}
-.contact svg{flex:0 0 18px;margin-top:.25rem}
-.contact a{color:#fff;text-decoration:none}
-.contact a:hover{text-decoration:underline}
-.btn{display:inline-block;margin-top:1.5rem;background:#fff;color:var(--indigo);font-weight:600;padding:.7rem 1.4rem;border-radius:999px;text-decoration:none}
-.btn:hover{background:var(--snow)}
+/* Hero */
+.hero{background:radial-gradient(900px 400px at 85% -10%,rgba(184,146,59,.22),transparent 60%),linear-gradient(160deg,var(--navy),#0d1730);color:#fff;padding:clamp(3rem,8vw,6rem) 0}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.eyebrow{display:inline-block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);font-weight:600;margin-bottom:1rem}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.4rem,1.6rem + 4vw,4.2rem);line-height:1.05;letter-spacing:-.01em}
+.hero .role{font-size:clamp(1.05rem,1rem + .5vw,1.3rem);color:var(--gold2);margin:.8rem 0 1.2rem;font-weight:500}
+.hero p.in{color:#cdd5ea;max-width:52ch;font-size:1.05rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.75rem 1.5rem;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:inherit;transition:transform .18s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:#fff}.btn.gold:hover{background:var(--gold2);color:var(--navy)}
+.btn.ghost{border-color:rgba(255,255,255,.4);color:#fff}.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.navy{background:var(--navy);color:#fff}.btn.navy:hover{background:var(--navy2)}
+.btn[disabled]{opacity:.65;cursor:not-allowed;transform:none}
+.portrait{justify-self:center;width:min(100%,320px);aspect-ratio:4/5;border-radius:28px;background:linear-gradient(145deg,#233a6b,#14213d);border:1px solid rgba(212,176,97,.45);display:grid;place-items:center;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.portrait::after{content:"";position:absolute;inset:14px;border:1px dashed rgba(212,176,97,.5);border-radius:18px}
+.portrait span{font-family:var(--serif);font-size:5rem;color:var(--gold2)}
+.portrait small{position:absolute;bottom:26px;color:#aeb8d4;font-size:.78rem;letter-spacing:.08em}
+/* To use a real photo: add <img src="photo.jpg" alt="Narayan Subedi"> inside .portrait and style with width/height:100%;object-fit:cover;border-radius:28px */
 
-/* Content column */
-nav.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem}
-nav.tabs a{padding:.45rem 1rem;border:1px solid var(--line);background:var(--card);border-radius:999px;text-decoration:none;color:var(--ink-soft);font-size:.92rem;font-weight:500}
-nav.tabs a:hover{border-color:var(--indigo);color:var(--indigo)}
+/* Sections */
+section.s{padding:clamp(3rem,7vw,5.5rem) 0}
+section.alt{background:#fff;border-block:1px solid var(--line)}
+.head{margin-bottom:2.2rem;max-width:60ch}
+.head .eyebrow{color:var(--gold)}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,1.4rem + 1.6vw,2.6rem);color:var(--navy);line-height:1.15}
+h3{font-size:1.1rem;font-weight:600;color:var(--navy);line-height:1.35}
+p{color:var(--soft)}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:2.5rem}
+.about p+p{margin-top:1rem}
+.facts{display:grid;gap:.9rem;align-content:start}
+.fact{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;padding:1rem 1.2rem;box-shadow:var(--sh)}
+.fact b{display:block;font-family:var(--serif);font-size:1.35rem;color:var(--navy);line-height:1.2}
+.fact span{font-size:.85rem;color:var(--soft)}
+.tl{list-style:none;position:relative;display:grid;gap:1.5rem;padding-left:2rem}
+.tl::before{content:"";position:absolute;left:.5rem;top:.5rem;bottom:.5rem;width:2px;background:linear-gradient(var(--gold),var(--line))}
+.tl li{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.4rem 1.5rem;box-shadow:var(--sh)}
+.tl li::before{content:"";position:absolute;left:-1.85rem;top:1.7rem;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--gold)}
+.alt .tl li::before{border-color:#fff}
+.meta{font-size:.88rem;color:var(--soft);margin:.2rem 0 .6rem}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#f3ead2;color:#7b5d17;padding:.15rem .6rem;border-radius:999px;margin-left:.5rem;vertical-align:middle}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1.1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.4rem;box-shadow:var(--sh);transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.card .ic{width:42px;height:42px;border-radius:12px;background:var(--navy);color:var(--gold2);display:grid;place-items:center;margin-bottom:.9rem}
+.card p{font-size:.93rem;margin-top:.4rem}
+.card.ph{border-style:dashed;background:transparent;box-shadow:none}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;margin-top:1.5rem}
+.chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem;font-size:.9rem}
 
-section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.75rem;margin-bottom:1.25rem;scroll-margin-top:1rem}
-h2{font-family:var(--serif);font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:var(--indigo)}
-h3{font-size:1.05rem;font-weight:600}
-p{max-width:68ch;color:var(--ink-soft)}
-.lead{font-size:1.15rem;color:var(--ink);font-family:var(--serif);max-width:60ch}
+/* Contact */
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:2rem;align-items:start}
+.clist{list-style:none;display:grid;gap:.8rem;margin-top:1.5rem}
+.clist a,.clist span{display:flex;gap:.8rem;align-items:center;padding:.8rem 1rem;background:#fff;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);word-break:break-word;min-height:48px}
+.clist a:hover{border-color:var(--gold)}
+form{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(1.25rem,3vw,2rem);box-shadow:var(--sh)}
+label{display:block;font-weight:600;font-size:.9rem;color:var(--navy);margin-bottom:.4rem}
+.field{margin-bottom:1.1rem}
+input[type=email],textarea{width:100%;font:inherit;font-size:1rem;padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+textarea{min-height:150px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--gold);background:#fff}
+.err{color:#b3203a;font-size:.85rem;margin-top:.3rem;min-height:1.1em}
+.hp{position:absolute;left:-9999px;height:0;width:0;overflow:hidden}
+.status{margin-top:1rem;padding:.9rem 1rem;border-radius:12px;font-size:.95rem;display:none}
+.status.ok{display:block;background:#e8f5ec;color:#1e6b3a;border:1px solid #b9e0c6}
+.status.bad{display:block;background:#fdecee;color:#9a1b30;border:1px solid #f3c2c9}
+.spin{width:16px;height:16px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;display:none}
+.loading .spin{display:inline-block}
+@keyframes sp{to{transform:rotate(360deg)}}
+footer{background:var(--navy);color:#aeb8d4;text-align:center;padding:2rem 0 calc(2rem + env(safe-area-inset-bottom,0px));font-size:.9rem}
 
-/* Timeline (real sequence: work then study) */
-.timeline{list-style:none;border-left:2px solid var(--line);margin-left:.4rem;display:grid;gap:1.5rem}
-.timeline li{position:relative;padding-left:1.5rem}
-.timeline li::before{content:"";position:absolute;left:-.45rem;top:.45rem;width:.8rem;height:.8rem;border-radius:50%;background:var(--crimson);border:2px solid var(--card);box-shadow:0 0 0 2px var(--crimson)}
-.timeline .meta{font-size:.9rem;color:var(--ink-soft);margin:.1rem 0 .4rem}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .55s,transform .55s}.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.btn,.card{transition:none}.spin{animation-duration:2s}}
 
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-.item{border:1px solid var(--line);border-left:4px solid var(--indigo);border-radius:10px;padding:1rem 1.1rem;background:var(--snow)}
-.item.award{border-left-color:var(--crimson)}
-.item .meta{font-size:.88rem;color:var(--ink-soft);margin:.15rem 0 .4rem}
-.item p{font-size:.95rem}
-
-.chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none}
-.chips li{background:var(--snow);border:1px solid var(--line);border-radius:999px;padding:.4rem .95rem;font-size:.93rem}
-
-.langs{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;list-style:none}
-.langs li{text-align:center;padding:1rem;border:1px solid var(--line);border-radius:10px;font-weight:500}
-
-footer{text-align:center;color:var(--ink-soft);font-size:.9rem;padding-top:.5rem}
-
-/* Responsive */
 @media (max-width:900px){
-  .page{grid-template-columns:1fr;gap:1.25rem}
-  .profile{position:static}
+ .hero .wrap,.about,.contact{grid-template-columns:1fr}
+ .portrait{width:min(70%,240px);order:-1}
+ .burger{display:grid}
+ nav{position:absolute;left:0;right:0;top:calc(64px + env(safe-area-inset-top,0px));background:var(--bg);border-bottom:1px solid var(--line);display:none;padding:.5rem 1.25rem 1rem}
+ nav.open{display:block}
+ nav ul{flex-direction:column}nav a{padding:.8rem 1rem;font-size:1rem}
 }
-@media (max-width:600px){
-  .grid,.langs{grid-template-columns:1fr}
-  section{padding:1.25rem}
-  .profile h1{font-size:1.7rem}
-}
+@media (max-width:480px){.cta .btn{width:100%}.tl{padding-left:1.5rem}.tl li::before{left:-1.4rem}}
+@media print{header.top,.cta,form,.burger{display:none}.js .rv{opacity:1;transform:none}.hero{background:#fff;color:#000}.hero *{color:#000!important}}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="page">
+<a class="skip" href="#home">Skip to content</a>
 
-  <aside class="profile">
-    <!-- Sample profile image: replace the src with your own photo, e.g. src="photo.jpg" -->
-    <img class="avatar" alt="Sample profile photo of Narayan Subedi"
-      href="profile.jpg">
-    <h1>Narayan Subedi</h1>
-    <p class="role">Administrative Assistant</p>
-    <p class="office">Benighat Rorang Rural Municipality, Dhading</p>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#home" aria-label="Narayan Subedi, home"><i>NS</i>Narayan Subedi</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <nav id="nav" aria-label="Primary">
+   <ul>
+    <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#awards">Awards</a></li><li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
 
-    <ul class="contact">
-      <li>
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-        <a href="tel:+9779848416128">9848416128</a>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        <a href="mailto:subedi.nps2004@gmail.com">subedi.nps2004@gmail.com</a>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span>Bajhang, Nepal</span>
-      </li>
-    </ul>
-    <a class="btn" href="mailto:subedi.nps2004@gmail.com">Send an email</a>
-  </aside>
+<main>
+<section class="hero" id="home">
+ <div class="wrap">
+  <div>
+   <span class="eyebrow">Benighat Rorang Rural Municipality</span>
+   <h1>Narayan Subedi</h1>
+   <p class="role">Senior Assistant (Administration)</p>
+   <p class="in">I prepare official documents and keep the records that a local government office depends on, with accuracy, discipline and a commitment to public service delivered with integrity.</p>
+   <div class="cta">
+    <a class="btn gold" href="Narayan-Subedi-CV.pdf" target="_blank" rel="noopener">View CV</a>
+    <a class="btn ghost" href="#projects">Explore projects</a>
+    <a class="btn ghost" href="#contact">Contact me</a>
+   </div>
+  </div>
+  <div class="portrait" role="img" aria-label="Profile photo placeholder"><span>NS</span><small>PHOTO PLACEHOLDER</small></div>
+ </div>
+</section>
 
-  <main>
-    <nav class="tabs" aria-label="Page sections">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#work">Projects</a>
-      <a href="#recognition">Recognition</a>
-      <a href="#skills">Skills</a>
-    </nav>
+<section class="s rv" id="about">
+ <div class="wrap about">
+  <div>
+   <div class="head"><span class="eyebrow">About me</span><h2>Reliable administration, built on detail</h2></div>
+   <p>I work in the Administration Branch of Benighat Rorang Rural Municipality in Dhading, preparing official letters and documents, maintaining office records and supporting the daily operations of the office.</p>
+   <p>I hold a Bachelor of Business Studies and am skilled in Microsoft Word, Microsoft Excel, computer operations, official correspondence, document preparation and record management. My goal is to support effective office administration and help deliver efficient public services with integrity and professionalism.</p>
+  </div>
+  <div class="facts">
+   <div class="fact"><b>April 2026</b><span>Joined BRRM as Senior Assistant</span></div>
+   <div class="fact"><b>BBS, 2024</b><span>Saraswati Multiple Campus, Kathmandu</span></div>
+   <div class="fact"><b>Nepali · English · Bajhangi</b><span>Languages</span></div>
+  </div>
+ </div>
+</section>
 
-    <section id="about">
-      <h2>About me</h2>
-      <p class="lead">I work in the Administration Branch of a local government office, preparing official documents and keeping records that people can rely on.</p>
-      <p style="margin-top:1rem">I hold a Bachelor's degree and I am skilled in Microsoft Word, Microsoft Excel, computer operations, official correspondence, document preparation, and record management. I stay disciplined, support effective office administration, and aim to deliver efficient public services with integrity and professionalism.</p>
-    </section>
+<section class="s alt rv" id="experience">
+ <div class="wrap">
+  <div class="head"><span class="eyebrow">Career</span><h2>Professional experience</h2></div>
+  <ul class="tl"><li>
+   <h3>Senior Assistant (Administration)<span class="pill">Current</span></h3>
+   <p class="meta">Benighat Rorang Rural Municipality (BRRM), Dhading, Nepal · April 2026 – Present</p>
+   <p>Prepare official letters and documents, maintain office records, provide administrative support, and assist with daily office operations using MS Word and Excel.</p>
+  </li></ul>
+ </div>
+</section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul class="timeline">
-        <li>
-          <h3>Senior Assistant (Administration)</h3>
-          <p class="meta">Benighat Rorang Rural Municipality (BRRM), Dhading, Nepal &middot; Since April 2026</p>
-          <p>Prepare official letters and documents, maintain office records, provide administrative support, and assist with daily office operations using MS Word and Excel.</p>
-        </li>
-      </ul>
-    </section>
+<section class="s rv" id="education">
+ <div class="wrap">
+  <div class="head"><span class="eyebrow">Qualifications</span><h2>Education</h2></div>
+  <ul class="tl"><li>
+   <h3>Bachelor of Business Studies (BBS)</h3>
+   <p class="meta">Saraswati Multiple Campus, Thamel, Kathmandu · March 2020 – September 2024</p>
+   <p>Studied business management, accounting, finance, economics, marketing and organizational administration, building the analytical, communication and problem-solving skills applied in office administration today.</p>
+  </li></ul>
+ </div>
+</section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <ul class="timeline">
-        <li>
-          <h3>Bachelor of Business Studies (BBS)</h3>
-          <p class="meta">Saraswati Multiple Campus, Thamel, Kathmandu &middot; March 2020 – September 2024</p>
-          <p>Studied business management, accounting, finance, economics, marketing, and organizational administration. Built analytical thinking, communication, problem-solving, and decision-making skills used in office administration today.</p>
-        </li>
-      </ul>
-    </section>
+<section class="s alt rv" id="skills">
+ <div class="wrap">
+  <div class="head"><span class="eyebrow">Capabilities</span><h2>Professional skills</h2></div>
+  <div class="cards">
+   <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div><h3>Office administration</h3><p>Office administration and management, organizational skills and day-to-day operational support.</p></div>
+   <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div><h3>Correspondence &amp; documentation</h3><p>Official correspondence and document preparation to government standards.</p></div>
+   <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v4H4zM4 12h16v8H4z"/></svg></div><h3>Records management</h3><p>Maintaining accurate, accessible office records and data entry.</p></div>
+   <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><h3>Microsoft Office</h3><p>Microsoft Word and Microsoft Excel, plus general computer operations.</p></div>
+  </div>
+  <ul class="chips"><li>Communication</li><li>Problem-solving</li><li>Public service &amp; professional ethics</li><li>Coordination</li></ul>
+ </div>
+</section>
 
-    <section id="work">
-      <h2>Projects</h2>
-      <div class="item">
-        <h3>Administrative and Office Management Support</h3>
-        <p class="meta">Benighat Rorang Rural Municipality</p>
-        <p>Supported daily administrative operations, prepared official correspondence and documents, and maintained office records. Assisted with documentation, data entry, and coordination so the office runs efficiently and public services are delivered on time.</p>
-      </div>
-    </section>
+<section class="s rv" id="projects">
+ <div class="wrap">
+  <div class="head"><span class="eyebrow">Work</span><h2>Projects &amp; contributions</h2></div>
+  <div class="cards">
+   <div class="card"><h3>Administrative &amp; Office Management Support</h3><p class="meta">Benighat Rorang Rural Municipality</p><p>Supported daily administrative operations, prepared official correspondence and documents, and maintained office records. Assisted with documentation, data entry and coordination so the office runs efficiently and public services are delivered on time.</p></div>
+   <div class="card ph"><h3>Add a project</h3><p class="meta">Placeholder</p><p>Add further reports, documents or contributions here, with description, your role, tools used and outcome.</p></div>
+  </div>
+ </div>
+</section>
 
-    <section id="recognition">
-      <h2>Achievements and awards</h2>
-      <div class="grid">
-        <div class="item award">
-          <h3>Certificate of Appreciation for Administrative Excellence</h3>
-          <p class="meta">BRRM, Dhading &middot; 2026</p>
-          <p>Recognized for dedication, professionalism, and contributions to administrative activities, office documentation, and effective service delivery.</p>
-        </div>
-        <div class="item">
-          <h3>Academic achievement and administrative skills</h3>
-          <p class="meta">BBS degree, 2024</p>
-          <p>Completed the degree and built practical skills in computer operations, MS Word, MS Excel, and office administration, now applied in official documentation and record management.</p>
-        </div>
-      </div>
-    </section>
+<section class="s alt rv" id="awards">
+ <div class="wrap">
+  <div class="head"><span class="eyebrow">Recognition</span><h2>Achievements &amp; certifications</h2></div>
+  <div class="cards">
+   <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg></div><h3>Certificate of Appreciation for Administrative Excellence</h3><p class="meta">BRRM, Dhading · 2026</p><p>Recognized for dedication, professionalism, and contributions to administrative activities, office documentation and effective service delivery.</p></div>
+   <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></div><h3>Bachelor of Business Studies</h3><p class="meta">Completed 2024</p><p>Built practical skills in computer operations, MS Word, MS Excel and office administration.</p></div>
+  </div>
+ </div>
+</section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="chips">
-        <li>Communication</li>
-        <li>Office administration and management</li>
-        <li>Public service and professional ethics</li>
-        <li>Computer operations</li>
-        <li>Problem-solving</li>
-        <li>Organizational skills</li>
-        <li>Microsoft Word</li>
-        <li>Microsoft Excel</li>
-        <li>Official correspondence</li>
-        <li>Record management</li>
-      </ul>
+<section class="s rv" id="contact">
+ <div class="wrap contact">
+  <div>
+   <div class="head" style="margin-bottom:0"><span class="eyebrow">Contact</span><h2>Let's connect</h2></div>
+   <p style="margin-top:1rem">Send me a message and I will reply by email. You can also download my CV below.</p>
+   <ul class="clist">
+    <li><a href="mailto:subedi.nps2004@gmail.com">✉ subedi.nps2004@gmail.com</a></li>
+    <li><a href="tel:+9779848416128">☎ 9848416128</a></li>
+    <li><span>⌖ Bajhang, Nepal</span></li>
+   </ul>
+   <a class="btn navy" style="margin-top:1.25rem" href="Narayan-Subedi-CV.pdf" download="Narayan-Subedi-CV.pdf">⬇ Download CV (PDF)</a>
+  </div>
 
-      <h2 style="margin-top:1.75rem">Languages</h2>
-      <ul class="langs">
-        <li>Nepali</li>
-        <li>English</li>
-        <li>Bajhangi</li>
-      </ul>
-    </section>
+  <form id="cf" action="https://formspree.io/f/xrpeanwd" method="POST" novalidate>
+   <h3 style="margin-bottom:1.2rem;font-size:1.25rem">Send me a message</h3>
+   <div class="field">
+    <label for="email">Your email address</label>
+    <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="email-err" placeholder="you@example.com">
+    <div class="err" id="email-err" role="alert"></div>
+   </div>
+   <div class="field">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required aria-describedby="msg-err" placeholder="How can I help?"></textarea>
+    <div class="err" id="msg-err" role="alert"></div>
+   </div>
+   <div class="hp" aria-hidden="true"><label>Leave empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+   <button class="btn gold" type="submit" id="send" style="width:100%"><span class="spin"></span><span id="sendtxt">Send Message</span></button>
+   <div class="status" id="status" role="status" aria-live="polite"></div>
+  </form>
+ </div>
+</section>
+</main>
 
-    <footer>&copy; 2026 Narayan Subedi</footer>
-  </main>
+<footer><div class="wrap">© <span id="yr">2026</span> Narayan Subedi · Benighat Rorang Rural Municipality, Dhading</div></footer>
 
-</div>
+<script>
+(function(){
+ document.getElementById('yr').textContent=new Date().getFullYear();
+ // Mobile menu
+ var b=document.getElementById('burger'),n=document.getElementById('nav');
+ b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+ n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+ // Reveal + active nav
+ var rv=document.querySelectorAll('.rv'),links=[].slice.call(document.querySelectorAll('nav a'));
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08});
+  rv.forEach(function(x){io.observe(x)});
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('main section[id]').forEach(function(s){so.observe(s)});
+ }else rv.forEach(function(x){x.classList.add('in')});
+
+ // Contact form (Formspree, AJAX)
+ var f=document.getElementById('cf'),btn=document.getElementById('send'),txt=document.getElementById('sendtxt'),st=document.getElementById('status');
+ var em=document.getElementById('email'),ms=document.getElementById('message'),ee=document.getElementById('email-err'),me=document.getElementById('msg-err');
+ var busy=false;
+ function show(t,c){st.className='status '+c;st.textContent=t}
+ function validate(){
+  var ok=true;ee.textContent='';me.textContent='';
+  if(!em.value.trim()){ee.textContent='Please enter your email address.';ok=false}
+  else if(!em.checkValidity()){ee.textContent='Please enter a valid email address, for example name@example.com.';ok=false}
+  if(!ms.value.trim()){me.textContent='Please write a message.';ok=false}
+  if(!ok)(ee.textContent?em:ms).focus();
+  return ok;
+ }
+ f.addEventListener('submit',function(e){
+  e.preventDefault();
+  if(busy)return;
+  st.className='status';
+  if(!validate())return;
+  busy=true;btn.disabled=true;f.classList.add('loading');txt.textContent='Sending…';
+  fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+  .then(function(r){return r.json().catch(function(){return{}}).then(function(d){return{ok:r.ok,d:d}})})
+  .then(function(x){
+   if(x.ok){f.reset();show('Thank you! Your message has been sent. I will reply by email soon.','ok')}
+   else{var m=(x.d&&x.d.errors&&x.d.errors.map(function(i){return i.message}).join(', '))||'Something went wrong while sending your message.';show(m+' Please try again or email me directly at subedi.nps2004@gmail.com.','bad')}
+  })
+  .catch(function(){show('Network error: your message was not sent. Check your connection and try again, or email me directly at subedi.nps2004@gmail.com.','bad')})
+  .then(function(){busy=false;btn.disabled=false;f.classList.remove('loading');txt.textContent='Send Message'});
+ });
+})();
+</script>
 </body>
 </html>
